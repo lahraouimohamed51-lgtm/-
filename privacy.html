@@ -1,41 +1,127 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>سياسة الخصوصية - [morocco RATE]</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>سياسة الخصوصية - [Morocco Rate]</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;padding:20px;max-width:900px;margin:auto;color:#222}
-    h1,h2{color:#0b3d91}
-    a{color:#0b3d91}
+    :root{
+      --bg:#f6fbff;
+      --card:#ffffff;
+      --accent1:#0b6b63; /* أخضر-زمردي */
+      --accent2:#f0b429; /* ذهبي دافئ */
+      --muted:#6b7280;
+      --maxw:980px;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.7);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: linear-gradient(180deg, #eef9f6 0%, #f6fbff 100%);
+      color:#0f1724;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:28px 16px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(11,107,99,0.08);
+      overflow:hidden;
+      border:1px solid rgba(11,107,99,0.06);
+    }
+    header{
+      background: linear-gradient(90deg, var(--accent1), #0f9a8a 60%, var(--accent2));
+      color:white;
+      padding:28px 26px;
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background:rgba(255,255,255,0.12);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:20px;
+      box-shadow:0 6px 18px rgba(11,107,99,0.12);
+    }
+    header h1{margin:0;font-size:20px;letter-spacing:0.2px}
+    header p{margin:0;opacity:0.95;color:rgba(255,255,255,0.95)}
+    main{padding:26px 28px;line-height:1.7}
+    h2{color:var(--accent1);margin-top:18px}
+    p{color:#0f1724}
+    ul{color:#0f1724}
+    .meta{display:flex;gap:12px;align-items:center;margin-top:8px}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent1);font-weight:600;border:1px solid rgba(11,107,99,0.06)}
+    footer{background:#fbfeff;padding:16px 28px;border-top:1px solid rgba(11,107,99,0.04);display:flex;justify-content:space-between;align-items:center}
+    a{color:var(--accent1);text-decoration:none}
+    @media (max-width:640px){
+      header{padding:18px}
+      main{padding:18px}
+      .logo{width:52px;height:52px;font-size:18px}
+    }
   </style>
 </head>
 <body>
-  <h1>سياسة الخصوصية - [morocco RATE]</h1>
-  <p>آخر تحديث: [تاريخ]</p>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo">[لوغو]</div>
+      <div>
+        <h1>سياسة الخصوصية - <strong>[Morocco rate]</strong></h1>
+        <p>آخر تحديث: <strong>[30/11/2025]</strong></p>
+        <div class="meta">
+          <span class="badge">حماية البيانات</span>
+          <span style="color:rgba(255,255,255,0.9);opacity:0.9">خصوصيتك مهمة لنا</span>
+        </div>
+      </div>
+    </header>
 
-  <h2>مقدمة</h2>
-  <p>مرحباً بكم في تطبيق <strong>[morocco RATE]</strong>. هذه الصفحة تشرح كيف نجمع ونستخدم ونحمي بيانات المستخدمين.</p>
+    <main>
+      <h2>مقدمة</h2>
+      <p>مرحباً بك في تطبيق <strong>[Morocco Rate]</strong>. هذه الصفحة تشرح أنواع البيانات التي نجمعها، كيف نستخدمها، وكيف يمكنك التحكم فيها.</p>
 
-  <h2>البيانات التي نجمعها</h2>
-  <ul>
-    <li><strong>معلومات الحساب:</strong> الاسم، البريد الإلكتروني، صورة الملف الشخصي.</li>
-    <li><strong>التقييمات والتعليقات:</strong> النصوص، التقييم بالنجوم، الصور.</li>
-    <li><strong>البيانات التقنية:</strong> معلومات الجهاز، نظام التشغيل، عناوين IP.</li>
-    <li><strong>الموقع التقريبي:</strong> إن فعّلت مشاركة الموقع.</li>
-  </ul>
+      <h2>البيانات التي نجمعها</h2>
+      <ul>
+        <li><strong>معلومات الحساب:</strong> الاسم، البريد الإلكتروني، وصورة الملف الشخصي إن وفّرت.</li>
+        <li><strong>التقييمات والتعليقات:</strong> النصوص، التقييم بالنجوم، والصور التي ترفعها.</li>
+        <li><strong>البيانات التقنية:</strong> معلومات الجهاز، نظام التشغيل، وعناوين IP لأغراض الأمان والتحليل.</li>
+        <li><strong>الموقع التقريبي:</strong> إن فعّلت مشاركة الموقع لاستخدام ميزات البحث حسب القرب.</li>
+      </ul>
 
-  <h2>كيف نستخدم البيانات</h2>
-  <p>نستخدم البيانات لتشغيل التطبيق، تحسين الخدمة، والتواصل مع المستخدمين.</p>
+      <h2>كيف نستخدم البيانات</h2>
+      <p>نستخدم البيانات لتشغيل التطبيق، عرض التقييمات، تحسين تجربة المستخدم، ومنع إساءة الاستخدام. كما نستخدم البريد للتواصل حول التحديثات أو المشاكل التقنية.</p>
 
-  <h2>التخزين والمشاركة</h2>
-  <p>نخزن البيانات لدى مزوّد خدمة سحابي مثل Firebase. لا نبيع بيانات المستخدمين.</p>
+      <h2>التخزين والمشاركة</h2>
+      <p>نخزن البيانات لدى مزوّد خدمة سحابي مثل Firebase. لا نبيع بيانات المستخدمين. قد نشارك بيانات محدودة مع مزوّدي خدمات لتشغيل التطبيق، وهؤلاء ملزمون بحماية البيانات.</p>
 
-  <h2>حقوق المستخدم</h2>
-  <p>لطلب حذف البيانات أو أي استفسار: <a href="mailto:[بريد التواصل]">[Lahraouimohamed51@gmail.com]</a>.</p>
+      <h2>الصور والمحتوى الذي تنشره</h2>
+      <p>الصور والتعليقات التي تنشرها قد تظهر لمستخدمين آخرين داخل التطبيق. لا تنشر محتوى ينتهك حقوق الغير أو يحتوي على معلومات حساسة.</p>
 
-  <h2>تواصل معنا</h2>
-  <p>البريد: <a href="mailto:[بريد التواصل]">[help_moroccorate@gmail.com]</a></p>
+      <h2>حقوقك</h2>
+      <p>يمكنك طلب حذف حسابك أو بياناتك عبر مراسلتنا على البريد التالي: <a href="mailto:[بريد التواصل]">[Morocoorateservice@gmail.com]</a>. سنعالج الطلب خلال فترة معقولة ما لم يكن هناك سبب قانوني للاحتفاظ ببعض السجلات.</p>
+
+      <h2>الأمان</h2>
+      <p>نتخذ إجراءات تقنية وإدارية لحماية بياناتك، لكن لا يوجد نظام آمن 100%؛ نوصي بعدم مشاركة معلومات حساسة داخل التعليقات.</p>
+
+      <h2>تغييرات على السياسة</h2>
+      <p>قد نحدّث هذه السياسة من وقت لآخر. سنعلن عن التغييرات داخل التطبيق أو عبر البريد عند الضرورة.</p>
+    </main>
+
+    <footer>
+      <div>للاستفسار: <a href="mailto:[بريد التواصل]">[helpcentreMoroccoRate@gmail.com]</a></div>
+      <div style="color:var(--muted)">© <strong>[Morocco rate]</strong></div>
+    </footer>
+  </div>
 </body>
-
 </html>
